@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'jquery-rails', '~> 4.4'
 gem 'simple_form', '~> 5.1'
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'haml', '~> 5.2', '>= 5.2.1'
 
 
 # Use Active Storage variant
