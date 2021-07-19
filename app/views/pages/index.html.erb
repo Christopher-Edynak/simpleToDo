@@ -1,12 +1,12 @@
 <% if user_signed_in? %>
 <%controller.redirect_to tasks_path %>
 <% else %>
-<div class="row">
-  <div class="col-md-8 mx-auto">
-    <h1>Welcome to Edynak ToDo List</h1>
-    <p class="lead">Please register an account or sign in to continue</p>
+  <div class="jumbotron">
+    <h2>Welcome to Edynak ToDo List</h2>
+    <h4>Trusted by millions. Edynak ToDo List is the best online Task Management App!</h4>
+    <br>
+    <h5>Please register an account or sign in to continue</h5>
     <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %>
     <%= link_to "Login", new_user_session_path, class: 'btn btn-success' %>
-  </div>
 </div>
 <% end %>

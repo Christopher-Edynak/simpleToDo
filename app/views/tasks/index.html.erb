@@ -1,7 +1,9 @@
-<% @tasks.each do |task| %>
-  <h2><%= link_to task.title, task %></h2>
-  <p><%= task.description %></p>
-
+<% if user_signed_in? %>
+  <% @tasks.each do |task| %>
+    <h2><%= link_to task.title, task %></h2>
+    <p><%= task.description %></p>
+  <% end %>
+<% else %>
 <% end %>
 
 <%= link_to "New Task", new_task_path %>
