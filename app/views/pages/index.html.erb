@@ -1,4 +1,8 @@
+<% if user_signed_in? %>
+<%controller.redirect_to tasks_path %>
+<% else %>
 <h1>Welcome to Edynak ToDo List</h1>
 <p class="lead">Please register an account or sign in to continue</p>
-<%= link_to "Sign Up", root_path, class: 'btn btn-primary' %>
-<%= link_to "Login", root_path, class: 'btn btn-success' %>
+<%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %>
+<%= link_to "Login", new_user_session_path, class: 'btn btn-success' %>
+<% end %>
